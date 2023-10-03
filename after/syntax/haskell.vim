@@ -468,6 +468,10 @@ if Cf('∴')
     syntax match hsNiceOperator ":=" conceal cchar=≝
 endif
 
+if Cf('🜂')
+    syntax match hsNiceOperator "\<Monad\>" conceal cchar=🜟
+endif
+
 " TODO:
 " See Basic Syntax Extensions - School of Haskell | FP Complete
 " intersection = (∩)
