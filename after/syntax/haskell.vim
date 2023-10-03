@@ -257,6 +257,7 @@ elseif !Cf('l')
     syntax match hsNiceOperator "`liftA`" conceal cchar=↥
     syntax match hsNiceOperator "`fmap`"  conceal cchar=↥
     syntax match hsNiceOperator "<$>"     conceal cchar=↥
+    syntax match hsNiceOperator "<&>"     conceal cchar=↧
 
     syntax match LIFTQ  contained "`" conceal
     syntax match LIFTQl contained "l" conceal cchar=↥
