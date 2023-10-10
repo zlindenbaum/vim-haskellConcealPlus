@@ -194,6 +194,10 @@ elseif !Cf('x')
     syntax match hsNiceOperator "*" conceal cchar=×
 endif
 
+if Cf('★')
+    syntax match hsNiceOperator "*" conceal cchar=★
+endif
+
 " 'E' option to enable ellipsis concealing with ‥  (two dot leader).
 if Cf('E')
     " The two dot leader is not guaranteed to be at the bottom. So, it
