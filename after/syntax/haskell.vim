@@ -54,6 +54,8 @@ endif
 syntax match hsNiceOperator "==" conceal cchar=≡
 syntax match hsNiceOperator "\/=" conceal cchar=≢
 syntax match hsNiceOperator "=" conceal cchar=≔
+syntax match hsNiceOperator "::" conceal cchar=⸬
+
 
 let s:extraConceal = 1
 " Some windows font don't support some of the characters,
