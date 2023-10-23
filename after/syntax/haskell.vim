@@ -244,6 +244,9 @@ elseif Cf('h')
     syntax match hsNiceOperator "<<"     conceal cchar=«
     syntax match hsNiceOperator "=\zs<<" conceal cchar=«
 " Left and right arrows with hooks are the default option for binds.
+elseif Cf('⤜')
+    syntax match hsNiceOperator ">>=\ze\_[[:alpha:][:space:]_()[\]]" conceal cchar=⤜
+    syntax match hsNiceOperator "=<<\ze\_[[:alpha:][:space:]_()[\]]" conceal cchar=⤛
 else
     syntax match hsNiceOperator ">>=\ze\_[[:alpha:][:space:]_()[\]]" conceal cchar=↪
     syntax match hsNiceOperator "=<<\ze\_[[:alpha:][:space:]_()[\]]" conceal cchar=↩
